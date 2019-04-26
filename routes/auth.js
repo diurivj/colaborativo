@@ -27,8 +27,10 @@ router.post('/login', (req, res, next) => {
 })
 
 router.get('/logout', (req, res, next) => {
+  req.app.locals.loggedUser =  {};
   req.logOut()
   res.redirect('/login')
+  
 })
 
 router.get('/profile', isLogged, (req, res, next) => res.render('auth/profile'))
