@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+#signup,
+#login {
+  background-image: url("https://images.unsplash.com/photo-1552772279-24fa4a454544?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+#signup h2,
+#login h2 {
+  color: white;
+  font-size: 2rem; }
+
+#signup form,
+#login form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column; }
+
+#signup form *,
+#login form * {
+  margin: 1%; }
+
+#signup form input,
+#login form input {
+  padding: 10px 30px; }
+
+#signup form label,
+#login form label {
+  color: white;
+  font-size: 2rem; }
+
+/*# sourceMappingURL=style.css.map */

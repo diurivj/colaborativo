@@ -1,0 +1,18 @@
+<h2>{{artist.name}}</h2>
+<p>{{artist.genre}}</p>
+<p>{{artist.rating}}</p>
+<p>{{artist.year}}</p>
+
+<h2>Comments</h2>
+{{#each comments}}
+<p>{{this.createdAt}}</p>
+<p>{{this.owner.name}}</p>
+<p>{{this.body}}</p>
+{{/each}}
+
+{{#if loggedUser}}
+<form action="/artists/{{artist._id}}" method="POST">
+  <textarea name="comment" cols="30" rows="10"></textarea>
+  <input type="submit" value="Comment">
+</form>
+{{/if}}
